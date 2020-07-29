@@ -10,7 +10,7 @@ class Product {
         this.manufacturer = _manufacturer;
         this.date = randomDate(new Date(2012, 0, 1), new Date(2025, 0, 1));
     }
-    priceForKilo() {
+    pricePerKilo() {
         return (this.price / this.weight);
     }
     expirationDate(product1, product2) {
@@ -30,14 +30,14 @@ class Product {
         }
     }
     drawProductToTable(product) {
-        const tBody = document.getElementById("tbody");
+        const tableBody = document.getElementById("tbody");
         const tr = document.createElement("tr");
         const tdName = _getTd();
         const tdPrice = _getTd();
         const tdIsKosher = _getTd();
         const tdWeight = _getTd();
         const tdManufacturer = _getTd();
-        const priceForKiloT = _getTd();
+        const pricePerKiloT = _getTd();
         const dateProduct = _getTd();
         const isProductExp = _getTd();
         tdPrice.innerText = product.price;
@@ -45,7 +45,7 @@ class Product {
         tdWeight.innerText = product.weight;
         tdIsKosher.innerText = product.isKosher;
         tdManufacturer.innerText = product.manufacturer;
-        priceForKiloT.innerText = product.priceForKilo();
+        pricePerKiloT.innerText = product.pricePerKilo();
         dateProduct.innerText = product.date;
         isProductExp.innerText = product.isExpired();
         tr.append(tdName);
@@ -53,10 +53,10 @@ class Product {
         tr.append(tdWeight);
         tr.append(tdIsKosher);
         tr.append(tdManufacturer);
-        tr.append(priceForKiloT);
+        tr.append(pricePerKiloT);
         tr.append(dateProduct);
         tr.append(isProductExp);
-        tBody.append(tr);
+        tableBody.append(tr);
     }
 }
 const container = document.getElementById("container");
