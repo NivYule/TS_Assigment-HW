@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container table-dark">
+        name: <input id="name" type="text" class="form-control"></input>
+        Price :<input id="price" type="number" class="form-control"></input>
+        Weight :<input id="weight" type="number" class="form-control"></input>
+        <button id="btn" class="btn btn-success">Add a New Product</button>
+      </div>
+        <table class="table table-borderless table-dark">
+            <thead>
+              <tr>
+                
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Is Kosher</th>
+                <th scope="col">Manufacturer</th>
+                <th scope="col">Price/Kilo</th>
+                <th scope="col">Exp. Date</th>
+                <th scope="col">is Expired?</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+          </table>
+          <div id="container" class="container">
     
+          </div>
 
     <script src="./dist/index.js"></script>
 </body>
