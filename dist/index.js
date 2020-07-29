@@ -40,9 +40,9 @@ class Product {
         const pricePerKiloT = _getTd();
         const dateProduct = _getTd();
         const isProductExp = _getTd();
-        tdPrice.innerText = product.price;
+        tdPrice.innerText = `${product.price} ₪`;
         tdName.innerText = product.name;
-        tdWeight.innerText = product.weight;
+        tdWeight.innerText = `${product.weight} g`;
         tdIsKosher.innerText = product.isKosher;
         tdManufacturer.innerText = product.manufacturer;
         pricePerKiloT.innerText = product.pricePerKilo();
@@ -60,10 +60,10 @@ class Product {
     }
 }
 const container = document.getElementById("container");
-const product1 = new Product("onion", 5, 2, true, "Osem");
-const product2 = new Product("tomato", 3, 2, true, "Elite");
-const product3 = new Product("Snickers", 8, 2.5, false, "Usa");
-const product4 = new Product("Banana", 2, 1.6, true, "Elite");
+const product1 = new Product("Twix", 7, 47, true, "Mars");
+const product2 = new Product("Bamba", 2.86, 80, true, "Osem");
+const product3 = new Product("Hershey's", 8, 2.5, false, "Hershey");
+const product4 = new Product("Milk Chocolate", 4.5, 100, true, "Elite");
 container.innerText += returnHigherPrice(product1, product2);
 container.innerHTML += "<br></br>";
 container.innerText += returnHigherPrice(product2, product4);
