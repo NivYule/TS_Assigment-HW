@@ -1,11 +1,19 @@
 {
   "name": "29.7.20",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start-compile": "tsc --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NivYule/TS_Assigment-HW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NivYule/TS_Assigment-HW/issues"
+  },
+  "homepage": "https://github.com/NivYule/TS_Assigment-HW#readme",
+  "description": ""
 }

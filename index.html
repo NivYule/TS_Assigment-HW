@@ -15,11 +15,25 @@
             <input id="price" type="number" class="form-control"></input>
             <label>Weight:</label>
             <input id="weight" type="number" class="form-control"></input>
-            <button id="btn" class="btn btn-info">Add a New Product</button>
+            <label>Unit:</label>
+            <select id="unit" class="form-control">
+                <option value="g">Grams</option>
+                <option value="Kg">Kilograms</option>
+                <option value="mL">Mililitre</option>
+                <option value="L">Litre</option>
+            </select>
+            <label>Is Kosher:</label>
+            <select id="isKosher" class="form-control">
+                <option value=true>True</option>
+                <option value=false>False</option>
+            </select>
+            <label>Manufacturer:</label>
+            <input id="manufacturer" type="text" class="form-control"></input>
+            <button id="buttonThatAddToTable" class="btn btn-info">Add a New Product</button>
         </div>
     
         <div class="row">
-            <table class="table table-light">
+            <table class="table table-light" border="1px">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Name</th>
@@ -36,8 +50,17 @@
                 </tbody>
             </table>
         </div>
-        <hr style="b">
+        <hr style="border-width: 10px; border-color: dimgrey;">
         <div class="row" style="text-align: center;">
+            <h4 style="margin: 0 auto; text-decoration: underline;">Compare Between Products:</h4>
+            <br></br>
+            <div class="container">
+            <label>Product 1</label>
+                <select id="productToCompare1"></select>
+                <label>Product 2</label>
+                <select id="productToCompare2"></select>
+                <button id="buttonToCompare" class="btn btn-success">Compare</button>
+            </div>
             <div id="container" class="container">
             </div>
         </div>
