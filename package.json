@@ -1,0 +1,11 @@
+{
+  "name": "29.7.20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-compile": "tsc --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
