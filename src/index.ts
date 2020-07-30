@@ -144,7 +144,8 @@ function _getOptions(product) {
 }
 
 function returnTheHigherPrice(product, product1, product2) {
-    array.forEach(item => console.log(item));
+  let matches = document.querySelectorAll('tr');
+  matches.forEach(item => console.log(item));
   if (product1.price > product2.price) {
     return `${product1.name} costs more than the ${product2.name}`;
   } else {
